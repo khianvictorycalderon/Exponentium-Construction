@@ -1,11 +1,8 @@
-# Title of your Project
-Description of your project, and purpose.
-
-## Usage
-How to use your project
+# Exponentium Construction
+A fictional construction company website.
 
 ## To run this project (General Steps):
-1. Clone this repository `git clone https://github.com/<user-name>/<repo-name>.git`
+1. Clone this repository `git clone https://github.com/khianvictorycalderon/Exponentium-Construction.git`
 2. Run `npm install`
 3. Run `npm run dev`
 
