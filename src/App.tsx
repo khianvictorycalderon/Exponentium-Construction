@@ -3,6 +3,7 @@ import { CiHome } from "react-icons/ci";
 import { CiSettings } from "react-icons/ci";
 import { CiCircleInfo } from "react-icons/ci";
 import { FiBriefcase } from "react-icons/fi";
+import { FiCreditCard } from "react-icons/fi";
 import { NavBarDivClassname, NavBarButton } from "./components/navbar-button";
 
 export default function App() {
@@ -33,6 +34,11 @@ export default function App() {
           {
             label: <NavBarButton><><FiBriefcase  size={32} strokeWidth={1.6}/>Projects</></NavBarButton>,
             action: () => alert("Clicked Projects"),
+            className: NavBarDivClassname
+          },
+          {
+            label: <NavBarButton><><FiCreditCard  size={32} strokeWidth={1.8}/>Certificates</></NavBarButton>,
+            action: () => alert("Clicked Certificates"),
             className: NavBarDivClassname
           },
         ]}
