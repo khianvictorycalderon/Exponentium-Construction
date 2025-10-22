@@ -4,4 +4,4 @@ export function NavBarButton({ children }: { children: React.ReactNode }) {
     );
 };
 
-export const NavBarDivClassname = "hover:bg-purple-500 px-5 font-semibold rounded-lg";
+export const NavBarDivClassname = "hover:bg-purple-500 px-5 font-semibold rounded-lg hover:shadow";
