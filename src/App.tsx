@@ -2,6 +2,7 @@ import { NavBar } from "./components/navbar";
 import { CiHome } from "react-icons/ci";
 import { CiSettings } from "react-icons/ci";
 import { CiCircleInfo } from "react-icons/ci";
+import { FiBriefcase } from "react-icons/fi";
 import { NavBarDivClassname, NavBarButton } from "./components/navbar-button";
 
 export default function App() {
@@ -20,13 +21,18 @@ export default function App() {
             className: NavBarDivClassname
           },
           {
-            label: <NavBarButton><><CiSettings size={32} strokeWidth={0.8}/>Services</></NavBarButton>,
+            label: <NavBarButton><><CiSettings size={32} strokeWidth={0.6}/>Services</></NavBarButton>,
             action: () => alert("Clicked Services"),
             className: NavBarDivClassname
           },
           {
             label: <NavBarButton><><CiCircleInfo  size={32} strokeWidth={0.8}/>About</></NavBarButton>,
             action: () => alert("Clicked About"),
+            className: NavBarDivClassname
+          },
+          {
+            label: <NavBarButton><><FiBriefcase  size={32} strokeWidth={1.6}/>Projects</></NavBarButton>,
+            action: () => alert("Clicked Projects"),
             className: NavBarDivClassname
           },
         ]}
