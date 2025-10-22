@@ -1,6 +1,7 @@
 import { NavBar } from "./components/navbar";
 import { CiHome } from "react-icons/ci";
 import { CiSettings } from "react-icons/ci";
+import { CiCircleInfo } from "react-icons/ci";
 import { NavBarDivClassname, NavBarButton } from "./components/navbar-button";
 
 export default function App() {
@@ -21,6 +22,11 @@ export default function App() {
           {
             label: <NavBarButton><><CiSettings size={32} strokeWidth={0.8}/>Services</></NavBarButton>,
             action: () => alert("Clicked Services"),
+            className: NavBarDivClassname
+          },
+          {
+            label: <NavBarButton><><CiCircleInfo  size={32} strokeWidth={0.8}/>About</></NavBarButton>,
+            action: () => alert("Clicked About"),
             className: NavBarDivClassname
           },
         ]}
