@@ -20,7 +20,7 @@ export default function App() {
           },
           {
             label: <NavBarButton><><CiSettings size={32} strokeWidth={0.8}/>Services</></NavBarButton>,
-            action: () => alert("Clicked Home"),
+            action: () => alert("Clicked Services"),
             className: NavBarDivClassname
           },
         ]}
