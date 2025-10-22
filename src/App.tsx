@@ -1,5 +1,6 @@
 import { NavBar } from "./components/navbar";
 import { CiHome } from "react-icons/ci";
+import { CiSettings } from "react-icons/ci";
 import { NavBarDivClassname, NavBarButton } from "./components/navbar-button";
 
 export default function App() {
@@ -13,7 +14,12 @@ export default function App() {
         buttonsAlignment="right"
         buttons={[
           {
-            label: <NavBarButton><><CiHome size={24} strokeWidth={1.25}/>Home</></NavBarButton>,
+            label: <NavBarButton><><CiHome size={32} strokeWidth={1.25}/>Home</></NavBarButton>,
+            action: () => alert("Clicked Home"),
+            className: NavBarDivClassname
+          },
+          {
+            label: <NavBarButton><><CiSettings size={32} strokeWidth={0.8}/>Services</></NavBarButton>,
             action: () => alert("Clicked Home"),
             className: NavBarDivClassname
           },
