@@ -1,4 +1,6 @@
 import { NavBar } from "./components/navbar";
+import { CiHome } from "react-icons/ci";
+import { NavBarDivClassname, NavBarButton } from "./components/navbar-button";
 
 export default function App() {
   return (
@@ -11,20 +13,10 @@ export default function App() {
         buttonsAlignment="right"
         buttons={[
           {
-            label: "Home",
+            label: <NavBarButton><><CiHome size={24} strokeWidth={1.25}/>Home</></NavBarButton>,
             action: () => alert("Clicked Home"),
-            className: "hover:bg-gray-700 px-5 py-2 font-medium rounded-lg"
+            className: NavBarDivClassname
           },
-          {
-            label: "Shop",
-            action: () => alert("Clicked Shop"),
-            className: "hover:bg-gray-700 px-5 py-2 font-medium rounded-lg"
-          },
-          {
-            label: "Contact",
-            action: () => alert("Clicked Contact"),
-            className: "hover:bg-gray-700 px-5 py-2 font-medium rounded-lg"
-          }
         ]}
       />
 
