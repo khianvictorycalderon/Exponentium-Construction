@@ -49,7 +49,7 @@ export default function App() {
           },
           {
             label: <NavBarButton><><CiSettings size={32} strokeWidth={0.6}/>Services</></NavBarButton>,
-            action: () => slideToID(sectionIDs.service, 120),
+            action: () => slideToID(sectionIDs.service, 30),
             className: NavBarDivClassname
           },
           {
