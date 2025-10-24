@@ -49,12 +49,12 @@ export default function App() {
           },
           {
             label: <NavBarButton><><CiSettings size={32} strokeWidth={0.6}/>Services</></NavBarButton>,
-            action: () => slideToID(sectionIDs.service, 50),
+            action: () => slideToID(sectionIDs.service, 120),
             className: NavBarDivClassname
           },
           {
             label: <NavBarButton><><CiCircleInfo  size={32} strokeWidth={0.8}/>About</></NavBarButton>,
-            action: () => slideToID(sectionIDs.about),
+            action: () => slideToID(sectionIDs.about, 80),
             className: NavBarDivClassname
           },
           {
