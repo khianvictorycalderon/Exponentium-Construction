@@ -23,12 +23,12 @@ export const ServicesSection = () => {
     ];
     
     return (
-        <SectionContainer className="py-16 md:py-32 text-center">
+        <SectionContainer className="py-16 md:py-16 lg:py-32 text-center">
             <>
                 <HeadingText className="!text-3xl md:!text-4xl lg:!text-5xl text-orange-500">What We Build</HeadingText>
 
                 {/* Services From */}
-                <div className="flex flex-wrap justify-center gap-2 pt-16">
+                <div className="flex flex-wrap justify-center gap-2 pt-8 md:py-16">
                     {Services.map((item, index) => (
                         <ServiceCard
                             key={`${item.title}-${index}`}
