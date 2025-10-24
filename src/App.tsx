@@ -60,7 +60,7 @@ export default function App() {
           },
           {
             label: <NavBarButton><><FiBriefcase  size={32} strokeWidth={1.6}/>Projects</></NavBarButton>,
-            action: () => slideToID(sectionIDs.project),
+            action: () => slideToID(sectionIDs.project, 80),
             className: NavBarDivClassname
           },
           {
