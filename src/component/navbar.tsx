@@ -23,7 +23,7 @@ export function NavBar({
 
   return (
     <nav
-      className={`fixed top-0 left-0 px-2 md:px-8 lg:px-32 w-full shadow z-50 ${
+      className={`fixed top-0 left-0 px-2 md:px-8 lg:px-32 w-full z-50 ${
         className || ""
       }`}
     >

@@ -47,13 +47,13 @@ export function Hero({
           </h1>
 
           {subheading && (
-            <h2 className="text-lg md:text-xl lg:text-2xl text-gray-300 font-medium">
+            <h2 className="text-lg md:text-xl lg:text-2xl text-white font-medium">
               {subheading}
             </h2>
           )}
 
           {cta_buttons.length > 0 && (
-            <div className="flex flex-wrap justify-center md:justify-start gap-4">
+            <div className="flex flex-col justify-center md:justify-start gap-4">
               {cta_buttons.map((button, i) => (
                 <div key={i} className="text-sm md:text-base font-semibold">
                   {button}

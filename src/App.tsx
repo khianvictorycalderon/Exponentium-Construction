@@ -5,13 +5,15 @@ import { CiCircleInfo } from "react-icons/ci";
 import { FiBriefcase } from "react-icons/fi";
 import { FiCreditCard } from "react-icons/fi";
 import { NavBarDivClassname, NavBarButton } from "./component/navbar-button";
+import { Hero } from "./component/hero";
+import { BaseText } from "./component/typography";
 
 export default function App() {
   return (
     <>
 
       <NavBar 
-        className="bg-purple-800 text-white shadow-lg"
+        className="bg-transparent text-white"
         image="icons/exponentium-construction.png"
         title="Exponentium"
         buttonsAlignment="right"
@@ -42,6 +44,22 @@ export default function App() {
             className: NavBarDivClassname
           },
         ]}
+      />
+
+      <Hero
+        background="linear-gradient(135deg, #FFA600, #FF3B05)"
+        heading="Building the Future"
+        subheading="We shape cities and strengthen communities through innovative construction solutions."
+        cta_buttons={[
+          <button 
+            onClick={() => alert("Clicked Contact Us!")}
+            className="bg-purple-800 hover:bg-purple-700 text-white px-6 py-3 rounded w-full duration-300 transition cursor-pointer"
+            >
+            <BaseText className="text-white font-semibold">Contact Us</BaseText>
+          </button>
+        ]}
+        logo="images/hero/Construction-Workers.png"
+        dark_cover_opacity={0}
       />
 
     </>
