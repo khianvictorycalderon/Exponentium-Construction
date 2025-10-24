@@ -48,7 +48,7 @@ export default function App() {
           },
           {
             label: <NavBarButton><><CiSettings size={32} strokeWidth={0.6}/>Services</></NavBarButton>,
-            action: () => slideToID(sectionIDs.service),
+            action: () => slideToID(sectionIDs.service, 50),
             className: NavBarDivClassname
           },
           {
@@ -87,9 +87,8 @@ export default function App() {
         />
       </section>
 
-      <section id={sectionIDs.service}>
-          <ServicesSection/>
-      </section>
+      <div id={sectionIDs.service} />
+      <ServicesSection/>
 
       {/* Temporary Lorem Ipsum Section */}
       <LoremIpsum/>
