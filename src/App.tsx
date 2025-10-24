@@ -13,6 +13,7 @@ import { slideToID } from "./utility/slide-to-section";
 import { ServicesSection } from "./sections/services";
 import { LoremIpsum } from "./sections/lorem";
 import { AboutSection } from "./sections/about";
+import { ProjectSection } from "./sections/projects";
 
 export default function App() {
 
@@ -93,6 +94,9 @@ export default function App() {
 
       <div id={sectionIDs.about} />
       <AboutSection/>
+
+      <div id={sectionIDs.project} />
+      <ProjectSection/>
 
       {/* Temporary Lorem Ipsum Section */}
       <LoremIpsum/>
