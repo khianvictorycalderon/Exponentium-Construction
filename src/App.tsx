@@ -12,6 +12,7 @@ import { useState } from "react";
 import { slideToID } from "./utility/slide-to-section";
 import { ServicesSection } from "./sections/services";
 import { LoremIpsum } from "./sections/lorem";
+import { AboutSection } from "./sections/about";
 
 export default function App() {
 
@@ -89,6 +90,9 @@ export default function App() {
 
       <div id={sectionIDs.service} />
       <ServicesSection/>
+
+      <div id={sectionIDs.about} />
+      <AboutSection/>
 
       {/* Temporary Lorem Ipsum Section */}
       <LoremIpsum/>
