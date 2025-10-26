@@ -14,6 +14,7 @@ import { ServicesSection } from "./sections/services";
 import { LoremIpsum } from "./sections/lorem";
 import { AboutSection } from "./sections/about";
 import { ProjectSection } from "./sections/projects";
+import { CertificatesSection } from "./sections/certificates";
 
 export default function App() {
 
@@ -65,7 +66,7 @@ export default function App() {
           },
           {
             label: <NavBarButton><><FiCreditCard  size={32} strokeWidth={1.8}/>Certificates</></NavBarButton>,
-            action: () => slideToID(sectionIDs.certificates),
+            action: () => slideToID(sectionIDs.certificates, 100),
             className: NavBarDivClassname
           },
         ]}
@@ -97,6 +98,9 @@ export default function App() {
 
       <div id={sectionIDs.project} />
       <ProjectSection/>
+
+      <div id={sectionIDs.certificates} />
+      <CertificatesSection/>
 
       {/* Temporary Lorem Ipsum Section */}
       <LoremIpsum/>
