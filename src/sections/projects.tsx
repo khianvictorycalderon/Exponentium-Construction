@@ -41,7 +41,7 @@ export const ProjectSection = () => {
                     </SubHeadingText>
                 </>
             </SectionContainer>
-            <div className="flex flex-wrap pt-16">
+            <div className="flex flex-wrap pt-4 md:pt-8 lg:pt-16">
                 {Projects.map((item, index) => (
                     <ProjectCard
                         key={`${item.title}-${index}`}
