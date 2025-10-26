@@ -13,6 +13,7 @@ export const CertificateCard = ({
         >
         <a href={image} target="_blank">
             <img 
+                title={"Accreditation Certificate"}
                 className="w-full h-auto cursor-pointer hover:brightness-110 hover:scale-110 transition duration-300"
                 src={image}
             />
