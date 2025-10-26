@@ -84,7 +84,7 @@ export const ContactSection = () => {
       <div className="pt-8">
         <button
           onClick={handleSubmit}
-          className="bg-orange-500 text-white font-semibold px-40 py-4 rounded-md shadow-md hover:bg-orange-600 transition-all cursor-pointer"
+          className="bg-orange-500 text-white font-semibold px-8 md:px-16 lg:px-40 py-4 rounded-md shadow-md hover:bg-orange-600 transition-all cursor-pointer"
         >
           Contact
         </button>
