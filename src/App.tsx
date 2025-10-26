@@ -15,6 +15,7 @@ import { AboutSection } from "./sections/about";
 import { ProjectSection } from "./sections/projects";
 import { CertificatesSection } from "./sections/certificates";
 import { ContactSection } from "./sections/contact";
+import Footer from "./components/footer";
 
 export default function App() {
 
@@ -33,6 +34,10 @@ export default function App() {
     project: "projects-section",
     certificates: "certificate-section",
     contact: "contact-section"
+  }
+
+  const handleMockButton = () => {
+    alert("You have clicked a dummy button, it does not do anything.");
   }
 
   return (
@@ -104,6 +109,64 @@ export default function App() {
 
       <div id={sectionIDs.contact} />
       <ContactSection/>
+
+      <Footer
+          className="!bg-gray-700 mt-32"
+          logo="icons/exponentium-construction.png"
+          texts={[
+            {
+              title: "Social Media",
+              content: (
+                <ul className="space-y-1">
+                  <li>
+                    <a onClick={handleMockButton} className="hover:text-white cursor-pointer">
+                      LinkedIn
+                    </a>
+                  </li>
+                  <li>
+                    <a onClick={handleMockButton} className="hover:text-white cursor-pointer">
+                      Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a onClick={handleMockButton} className="hover:text-white cursor-pointer">
+                      Instagram
+                    </a>
+                  </li>
+                </ul>
+              ),
+            },
+            {
+              title: "Contact Info",
+              content: (
+                <ul className="space-y-1">
+                  <li>
+                    <a onClick={handleMockButton} className="hover:text-white cursor-pointer">
+                      exponentium@fakemail.com
+                    </a>
+                  </li>
+                  <li>
+                    <a onClick={handleMockButton} className="hover:text-white cursor-pointer">
+                      +63 123 456 7891
+                    </a>
+                  </li>
+                </ul>
+              ),
+            },
+            {
+              title: "Website Created by",
+              content: (
+                <ul className="space-y-1">
+                  <li>
+                    <a title="Develoepr's Official Website" href="https://khian.netlify.app" target="_blank" className="hover:text-white">
+                      Khian Victory D. Calderon
+                    </a>
+                  </li>
+                </ul>
+              ),
+            },
+          ]}
+        />
     </>
   )
 }
