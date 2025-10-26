@@ -15,6 +15,7 @@ import { LoremIpsum } from "./sections/lorem";
 import { AboutSection } from "./sections/about";
 import { ProjectSection } from "./sections/projects";
 import { CertificatesSection } from "./sections/certificates";
+import { ContactSection } from "./sections/contact";
 
 export default function App() {
 
@@ -79,7 +80,7 @@ export default function App() {
           subheading="We shape cities and strengthen communities through innovative construction solutions."
           cta_buttons={[
             <button 
-              onClick={() => slideToID(sectionIDs.contact)}
+              onClick={() => slideToID(sectionIDs.contact, 80)}
               className="bg-purple-800 hover:bg-purple-700 text-white px-6 py-3 rounded w-full duration-300 transition cursor-pointer"
               >
               <BaseText className="text-white font-semibold">Contact Us</BaseText>
@@ -101,6 +102,9 @@ export default function App() {
 
       <div id={sectionIDs.certificates} />
       <CertificatesSection/>
+
+      <div id={sectionIDs.contact} />
+      <ContactSection/>
 
       {/* Temporary Lorem Ipsum Section */}
       <LoremIpsum/>
