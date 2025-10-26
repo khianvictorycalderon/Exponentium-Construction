@@ -19,23 +19,21 @@ export const CertificatesSection = () => {
     ]
 
     return (
-        <section className="pt-8 md:pt-16 lg:pt-24">
-            <SectionContainer className="text-center">
-                <>
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl text-orange-500 font-bold">Certification & Accreditation</h2>
-                    <h3 className="text-base md:text-lg lg:text-xl italic text-gray-700 font-semibold">We meet the highest industry standards and maintain full compliance with regulatory bodies.</h3>
+        <SectionContainer className="text-center pt-8 md:pt-16 lg:pt-24">
+            <>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl text-orange-500 font-bold">Certification & Accreditation</h2>
+                <h3 className="text-base md:text-lg lg:text-xl italic text-gray-700 font-semibold">We meet the highest industry standards and maintain full compliance with regulatory bodies.</h3>
 
-                    <div className="flex flex-wrap pt-8 md:pt-16 lg:pt-24">
-                        {Certificates.map((item, index) => (
-                            <CertificateCard
-                                key={`${item.image}-${index}`}
-                                image={item.image}
-                            />
-                        ))}
-                    </div>
+                <div className="flex flex-wrap pt-8 md:pt-16 lg:pt-24">
+                    {Certificates.map((item, index) => (
+                        <CertificateCard
+                            key={`${item.image}-${index}`}
+                            image={item.image}
+                        />
+                    ))}
+                </div>
 
-                </>
-            </SectionContainer>
-        </section>
+            </>
+        </SectionContainer>
     );
 }
