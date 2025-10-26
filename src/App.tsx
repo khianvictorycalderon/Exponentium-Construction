@@ -11,7 +11,6 @@ import { useOnScrollAt } from "./utility/scroll-detection";
 import { useState } from "react";
 import { slideToID } from "./utility/slide-to-section";
 import { ServicesSection } from "./sections/services";
-import { LoremIpsum } from "./sections/lorem";
 import { AboutSection } from "./sections/about";
 import { ProjectSection } from "./sections/projects";
 import { CertificatesSection } from "./sections/certificates";
@@ -105,10 +104,6 @@ export default function App() {
 
       <div id={sectionIDs.contact} />
       <ContactSection/>
-
-      {/* Temporary Lorem Ipsum Section */}
-      <LoremIpsum/>
-
     </>
   )
 }
