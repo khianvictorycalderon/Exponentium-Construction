@@ -15,6 +15,7 @@ export const ProjectCard = ({
     bgImage
 }: ProjectCardProps) => (
     <div 
+        key={key}
         className="flex-[100%] md:flex-1/2 h-[60vh] md:h-[70vh] lg:h-[80vh] bg-cover bg-center flex flex-col justify-end"
         style={{
             backgroundImage: `url(${bgImage})`
