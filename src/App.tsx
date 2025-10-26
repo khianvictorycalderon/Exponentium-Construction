@@ -8,7 +8,7 @@ import { NavBarDivClassname, NavBarButton } from "./components/navbar-button";
 import { Hero } from "./components/hero";
 import { BaseText } from "./components/typography";
 import { useOnScrollAt } from "./utility/scroll-detection";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { slideToID } from "./utility/slide-to-section";
 import { ServicesSection } from "./sections/services";
 import { AboutSection } from "./sections/about";
@@ -39,6 +39,10 @@ export default function App() {
   const handleMockButton = () => {
     alert("You have clicked a dummy button, it does not do anything.");
   }
+
+  useEffect(() => {
+    alert("This is a demo website created for presentation purposes only and does not represent a real business.");
+  },[]);
 
   return (
     <>
