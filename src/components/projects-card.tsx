@@ -23,8 +23,8 @@ export const ProjectCard = ({
         >
         <div className="bg-black/50 text-white py-2 md:py-4 lg:py-8 text-center">
             <h2 className="text-2xl md:text-3xl lg:text-4xl italic font-semibold">{title}</h2>
-            <h3 className="pt-2 md:pt-4 font-semibold italic text-xl">{description}</h3>
-            <h3 className="font-semibold italic text-xl">({year})</h3>
+            <h3 className="pt-2 md:pt-4 font-semibold italic text-base md:text-lg lg:text-xl">{description}</h3>
+            <h3 className="font-semibold italic text-base md:text-lg lg:text-xl">({year})</h3>
         </div>
     </div>
 );
