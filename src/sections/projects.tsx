@@ -1,3 +1,4 @@
+import { ProjectCard } from "../components/projects-card";
 import SectionContainer from "../components/section-container";
 import { SubHeadingText } from "../components/typography";
 
@@ -40,6 +41,17 @@ export const ProjectSection = () => {
                     </SubHeadingText>
                 </>
             </SectionContainer>
+            <div className="flex flex-wrap pt-16">
+                {Projects.map((item, index) => (
+                    <ProjectCard
+                        key={`${item.title}-${index}`}
+                        title={item.title}
+                        description={item.description}
+                        year={item.year}
+                        bgImage={item.bgImage}
+                    />
+                ))}
+            </div>
         </section>
     ); 
 
