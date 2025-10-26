@@ -1,5 +1,5 @@
-import SectionContainer from "../component/section-container";
-import { SubHeadingText } from "../component/typography";
+import SectionContainer from "../components/section-container";
+import { SubHeadingText } from "../components/typography";
 
 export const ProjectSection = () => {
     

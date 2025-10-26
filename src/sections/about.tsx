@@ -1,4 +1,4 @@
-import { BaseText } from "../component/typography";
+import { BaseText } from "../components/typography";
 
 export const AboutSection = () => (
   <section className="bg-orange-600 text-white flex lg:max-h-[80vh]">

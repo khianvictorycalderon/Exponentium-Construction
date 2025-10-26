@@ -1,12 +1,12 @@
-import { NavBar } from "./component/navbar";
+import { NavBar } from "./components/navbar";
 import { CiHome } from "react-icons/ci";
 import { CiSettings } from "react-icons/ci";
 import { CiCircleInfo } from "react-icons/ci";
 import { FiBriefcase } from "react-icons/fi";
 import { FiCreditCard } from "react-icons/fi";
-import { NavBarDivClassname, NavBarButton } from "./component/navbar-button";
-import { Hero } from "./component/hero";
-import { BaseText } from "./component/typography";
+import { NavBarDivClassname, NavBarButton } from "./components/navbar-button";
+import { Hero } from "./components/hero";
+import { BaseText } from "./components/typography";
 import { useOnScrollAt } from "./utility/scroll-detection";
 import { useState } from "react";
 import { slideToID } from "./utility/slide-to-section";

@@ -1,6 +1,6 @@
-import SectionContainer from "../component/section-container"
-import { ServiceCard } from "../component/services-card";
-import { HeadingText } from "../component/typography"
+import SectionContainer from "../components/section-container"
+import { ServiceCard } from "../components/services-card";
+import { HeadingText } from "../components/typography"
 
 export const ServicesSection = () => {
     
