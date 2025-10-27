@@ -5,7 +5,7 @@ export const AboutSection = () => (
 
     <div className="w-full md:w-1/2 flex items-center px-4 md:pl-8 lg:pl-32 py-16">
       <div className="flex flex-col gap-8">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center md:text-left">What We Build</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center md:text-left">Who We Are</h2>
         <BaseText className="leading-8 tracking-wide text-justify">
             Founded with a passion for excellence, Exponentium Construction Incorporated is a private and public construction contractor dedicated to elevating industry standards.
         </BaseText>
