@@ -146,12 +146,12 @@ export default function App() {
                 <ul className="space-y-1">
                   <li>
                     <a onClick={handleMockButton} className="hover:text-white cursor-pointer">
-                      exponentium@fakemail.com
+                      fake@mail.com
                     </a>
                   </li>
                   <li>
                     <a onClick={handleMockButton} className="hover:text-white cursor-pointer">
-                      +63 123 456 7891
+                      +63 123
                     </a>
                   </li>
                 </ul>
